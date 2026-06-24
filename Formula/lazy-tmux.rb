@@ -5,21 +5,21 @@
 class LazyTmux < Formula
   desc "Fast tmux session manager with TUI picker"
   homepage "https://github.com/alchemmist/lazy-tmux"
-  version "0.1.14"
+  version "0.1.17"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/alchemmist/lazy-tmux/releases/download/v0.1.14/lazy-tmux_darwin_amd64.tar.gz"
-      sha256 "79798ae83a8c621f71722396388feaae701e6782896227168ffff383ac3dc595"
+      url "https://github.com/alchemmist/lazy-tmux/releases/download/v0.1.17/lazy-tmux_darwin_amd64.tar.gz"
+      sha256 "f403db578668aab7667e47f9bdf2c02300e6d2784fe74fc8357583141a1ccbc5"
 
       define_method(:install) do
         bin.install "lazy-tmux"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/alchemmist/lazy-tmux/releases/download/v0.1.14/lazy-tmux_darwin_arm64.tar.gz"
-      sha256 "6186672a1ee8eb922c25d3615406a9b8b6ae6c26f026bb9e00eb8f4aa85edb0c"
+      url "https://github.com/alchemmist/lazy-tmux/releases/download/v0.1.17/lazy-tmux_darwin_arm64.tar.gz"
+      sha256 "c899d103bd9d3d007524123186b2f1afec51626bd2d1ed74bed0ea1e47fd8ee1"
 
       define_method(:install) do
         bin.install "lazy-tmux"
@@ -29,15 +29,15 @@ class LazyTmux < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alchemmist/lazy-tmux/releases/download/v0.1.14/lazy-tmux_linux_amd64.tar.gz"
-      sha256 "32cd007d4d52f3247eff665476b0c986038cdfb8289a42bd321df98495987078"
+      url "https://github.com/alchemmist/lazy-tmux/releases/download/v0.1.17/lazy-tmux_linux_amd64.tar.gz"
+      sha256 "226b313d736395831ae448f4495333d3056352097d56f90ef2bffff1c7acfd13"
       define_method(:install) do
         bin.install "lazy-tmux"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alchemmist/lazy-tmux/releases/download/v0.1.14/lazy-tmux_linux_arm64.tar.gz"
-      sha256 "ff7a1ddd7646d77b8c7c790d8d60f21d011d36f4468de15cbb8826e681a63ea1"
+      url "https://github.com/alchemmist/lazy-tmux/releases/download/v0.1.17/lazy-tmux_linux_arm64.tar.gz"
+      sha256 "a2a32d95a18418899c4b152dd46fe287a3e1a8238b31b4e9462a365938d6f51c"
       define_method(:install) do
         bin.install "lazy-tmux"
       end
