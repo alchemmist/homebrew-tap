@@ -5,21 +5,21 @@
 class LazyTmuxFzf < Formula
   desc "Fast tmux session manager (fzf picker)"
   homepage "https://github.com/alchemmist/lazy-tmux"
-  version "0.3.4"
+  version "0.3.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/alchemmist/lazy-tmux/releases/download/v0.3.4/lazy-tmux_darwin_amd64_fzf.tar.gz"
-      sha256 "e359d020a3acd19074fdc2fb401ac59051a148bed01540cf65e5b93f9e00864f"
+      url "https://github.com/alchemmist/lazy-tmux/releases/download/v0.3.5/lazy-tmux_darwin_amd64_fzf.tar.gz"
+      sha256 "b6f519f8c2e6c1ce87393937c96f6a9db8bce385f68cc0bf76dfe01907bdf2e2"
 
       define_method(:install) do
         bin.install "lazy-tmux" => "lazy-tmux-fzf"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/alchemmist/lazy-tmux/releases/download/v0.3.4/lazy-tmux_darwin_arm64_fzf.tar.gz"
-      sha256 "0c2219835b4a5ae20ddda26ab0216941767c745be1d67b332e34425cd588cf0e"
+      url "https://github.com/alchemmist/lazy-tmux/releases/download/v0.3.5/lazy-tmux_darwin_arm64_fzf.tar.gz"
+      sha256 "be9493ac92ec80a459da2c2192d9e6d12b4e9f33bfd672b213e93b26f0ca03a6"
 
       define_method(:install) do
         bin.install "lazy-tmux" => "lazy-tmux-fzf"
@@ -29,15 +29,15 @@ class LazyTmuxFzf < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alchemmist/lazy-tmux/releases/download/v0.3.4/lazy-tmux_linux_amd64_fzf.tar.gz"
-      sha256 "2c86bac4633d56f4b24f1a76105b1bc333cf10f8ae8702b002b099205cc9d7dd"
+      url "https://github.com/alchemmist/lazy-tmux/releases/download/v0.3.5/lazy-tmux_linux_amd64_fzf.tar.gz"
+      sha256 "b1d53fd73b0593001e2947b91adc480d7aa8e8fb2949dba3bba05f789c87a206"
       define_method(:install) do
         bin.install "lazy-tmux" => "lazy-tmux-fzf"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alchemmist/lazy-tmux/releases/download/v0.3.4/lazy-tmux_linux_arm64_fzf.tar.gz"
-      sha256 "1d682e5ca9d5251caed1b7bdf8c417895eea5ac446f223d73f6d7b72437533a9"
+      url "https://github.com/alchemmist/lazy-tmux/releases/download/v0.3.5/lazy-tmux_linux_arm64_fzf.tar.gz"
+      sha256 "a00828a65e0f441085a55795012e4d2e0cd81b8ae74969175784d1f1482af328"
       define_method(:install) do
         bin.install "lazy-tmux" => "lazy-tmux-fzf"
       end
